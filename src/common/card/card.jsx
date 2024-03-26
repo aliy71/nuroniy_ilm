@@ -15,7 +15,7 @@ const CardComponent = ({ product }) => {
     }
     const price = 35
     return (
-        <div className='relative max-w-[350px] w-full min-w-[180px] p-2 border border-gray-500/25 rounded-md bg-gray-500/15 text-white overflow-hidden'>
+        <div className='relative max-w-[350px] w-full min-w-[180px] p-2 border border-gray-500/50 rounded-md bg-gray-500/15 text-gray-500 overflow-hidden'>
             {
                 count > 0 && (
                     <NoteComponent label={count} className={'text-white bg-green-600 top-[-5px] left-[95%]'} />

@@ -6,9 +6,9 @@ const ProductsPage = () => {
     const [products, setProducts] = useState(1)
     return (
         <div className=''>
-            <h1 className='text-center'>Products</h1>
+            <h1 className='text-center text-3xl py-2 font-medium'>Products</h1>
             <div className="search__panel flex items-center content-between w-full">
-                <InputComponent label='search' inputType={'search'} className={'w-full'} icon={<IoIosSearch />} />
+                <InputComponent label='search' inputType={'search'} className={'w-full bg-transparent'} icon={<IoIosSearch />} />
             </div>
             <div className='flex items-center justify-center flex-wrap gap-3 py-4 min-h-[80vh]'>
                 {!products ? (
