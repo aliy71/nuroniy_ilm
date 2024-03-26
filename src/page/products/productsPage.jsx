@@ -5,7 +5,7 @@ import { IoIosSearch } from "react-icons/io";
 const ProductsPage = () => {
     const [products, setProducts] = useState(1)
     return (
-        <div className='container'>
+        <div className=''>
             <h1 className='text-center'>Products</h1>
             <div className="search__panel flex items-center content-between w-full">
                 <InputComponent label='search' inputType={'search'} className={'w-full'} icon={<IoIosSearch />} />
