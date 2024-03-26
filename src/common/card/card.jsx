@@ -15,7 +15,7 @@ const CardComponent = ({ product }) => {
     }
     const price = 35
     return (
-        <div className='relative max-w-[350px] w-full min-w-[180px] p-2 border rounded-md bg-white overflow-hidden'>
+        <div className='relative max-w-[350px] w-full min-w-[180px] p-2 border border-gray-500/25 rounded-md bg-gray-500/15 text-white overflow-hidden'>
             {
                 count > 0 && (
                     <NoteComponent label={count} className={'text-white bg-green-600 top-[-5px] left-[95%]'} />
@@ -25,8 +25,8 @@ const CardComponent = ({ product }) => {
                 <img src="https://imgs.search.brave.com/ZBKOJMPrJgmNg3ILB2hO-_Zsq5v32KsrtmqfqLT-7To/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNS8x/MS8xOS8yMS8xMS9h/dGxhcy0xMDUyMDEx/XzY0MC5qcGc" alt="image" loading="lazy" className='w-full h-full object-cover' />
             </div>
             <div className=''>
-                <div className='flex justify-between items-center'>
-                    <h3 className='font-bold text-xl my-1'>Title Name</h3>
+                <div className='flex justify-between items-center my-2'>
+                    <h3 className='font-bold text-2xl'>Title Name</h3>
                     <p className="flex gap-1 items-center">
                         <span>
                             {price.toLocaleString('uz-UZ', {
@@ -40,7 +40,7 @@ const CardComponent = ({ product }) => {
                         </span>
                     </p>
                 </div>
-                <p className='my-2 text-gray-700 text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, animi? Dolor sapiente maiores eius optio.</p>
+                <p className='my-2 text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, animi? Dolor sapiente maiores eius optio.</p>
                 <div className="flex items-center justify-between gap-2 my-2">
                     <ButtonComponent label={'ayirish'} clickHandler={decrementHandle} className={`text-white bg-red-600/95 rounded-md capitalize space-x-2 hover:bg-red-600 transition-all ${!count && 'hidden'} shadow-red-600`} icon={<CiBookmarkMinus className="text-3xl" />} isDisabled={count === 0} />
                     <ButtonComponent label={'qo\'shish'} clickHandler={incrementHandle} className={'text-white bg-blue-600/95 rounded-md capitalize space-x-2 hover:bg-blue-600 transition-all shadow-blue-600'} icon={<CiBookmarkPlus className="text-3xl" />} />
