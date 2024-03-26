@@ -12,7 +12,7 @@ const ProductsPage = () => {
             </div>
             <div className='flex items-center justify-center flex-wrap gap-3 py-4 min-h-[80vh]'>
                 {!products ? (
-                    <p className='text-2xl text-gray-500 italic text-center px-2'>afsuski, hech narsa topilmadi. qaytadan urinib ko'ring</p>
+                    <p className='text-2xl text-gray-500 italic text-center px-2'>afsuskii, hech narsa topilmadi. qaytadan urinib ko'ring</p>
                 ) : (
                     <>
                         <CardComponent product={{}} />
