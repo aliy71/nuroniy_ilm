@@ -7,7 +7,7 @@ const ProductsPage = () => {
     return (
         <div className=''>
             <h1 className='text-center text-3xl py-2 font-medium'>Products</h1>
-            <div className="search__panel flex items-center justify-between ">
+            <div className="search__panel flex items-center justify-center ">
                 <InputComponent label='search...' inputType={'text'} className={'w-[280px] text-md bg-transparent text-white'} icon={<IoIosSearch className='text-white size-6 group-hover:scale-[140%] transition-all' />} />
             </div>
             <div className='flex items-center justify-center flex-wrap gap-3 py-4 min-h-[80vh]'>
