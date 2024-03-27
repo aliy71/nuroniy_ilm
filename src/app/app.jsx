@@ -6,6 +6,7 @@ export default function App() {
     useEffect(() => {
         telegram.ready()
     })
+
     return (
         <div className='max-w-[1440px] w-full mx-auto bg-gray-700'>
             <div className='container'>

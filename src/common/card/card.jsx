@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import ButtonComponent from '../button/button'
 import NoteComponent from "../note/noteComponent";
 
-const CardComponent = ({ product }) => {
+const CardComponent = ({ product, MainButtonHandle }) => {
     const [count, setCount] = useState(0)
     const decrementHandle = () => {
         count > 0 && setCount(prev => prev -= 1)
@@ -45,7 +45,7 @@ const CardComponent = ({ product }) => {
                     <ButtonComponent label={'ayirish'} clickHandler={decrementHandle} className={`text-white bg-red-600/95 rounded-md capitalize space-x-2 hover:bg-red-600 transition-all ${!count && 'hidden'} shadow-red-600`} icon={<CiBookmarkMinus className="text-3xl" />} isDisabled={count === 0} />
                     <ButtonComponent label={'qo\'shish'} clickHandler={incrementHandle} className={'text-white bg-blue-600/95 rounded-md capitalize space-x-2 hover:bg-blue-600 transition-all shadow-blue-600'} icon={<CiBookmarkPlus className="text-3xl" />} />
                 </div>
-                <ButtonComponent label={'add to cart'} clickHandler={() => { }} className={`text-white bg-green-600 rounded-md capitalize space-x-2 shadow-green-600`} icon={<IoBagAdd className="text-3xl" />} isDisabled={count === 0} />
+                <ButtonComponent label={'add to cart'} clickHandler={MainButtonHandle} className={`text-white bg-green-600 rounded-md capitalize space-x-2 shadow-green-600`} icon={<IoBagAdd className="text-3xl" />} isDisabled={count === 0} />
             </div>
         </div>
     )
